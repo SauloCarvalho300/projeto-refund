@@ -10,7 +10,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="style.css" />
 
   <title>Refund</title>
 </head>
@@ -23,8 +23,8 @@
       <form>
         <h1>Solicitação de reembolso</h1>
         <p>
-          Informe os dados da despesa para solicitar reembolso.
-          A despesa será analisada e reembolsada em até 30 dias.
+          Informe os dados da despesa para solicitar reembolso. A despesa será
+          analisada e reembolsada em até 30 dias.
         </p>
 
         <fieldset>
@@ -38,25 +38,33 @@
             <select name="category" id="category" required>
               <option value="" disabled selected hidden>Selecione</option>
               <option value="food">Alimentação</option>
-              <option value="accomodation">Hospedagem</option>
+              <option value="accommodation">Hospedagem</option>
               <option value="services">Serviços</option>
               <option value="transport">Transporte</option>
-              <option value="others">outros</option>
+              <option value="others">Outros</option>
             </select>
           </fieldset>
 
           <fieldset>
             <legend>Valor da despesa</legend>
-            <input type="text" name="amount" id="amount" placeholder="R$0,00" required>
+            <input 
+              type="text" 
+              name="amout" 
+              id="amount" 
+              placeholder="R$ 0,00" 
+              required
+            >
           </fieldset>
         </div>
+
         <button type="submit">Adicionar despesa</button>
       </form>
+
       <aside>
         <header>
           <p>
             Minhas solicitações <i>&bullet;</i>
-            <span>0 despesas</span>
+            <span>0 despesa</span>
           </p>
           <h2>
             <small>R$</small>0,00
@@ -64,7 +72,7 @@
         </header>
 
         <ul>
-          <li class="expense">
+          <!-- <li class="expense">
             <img src="./img/food.svg" alt="Icone de tipo da despesa">
 
             <div class="expense-info">
@@ -72,29 +80,18 @@
               <span>Alimentação</span>
             </div>
 
-            <span class="expense-amount"></span>
+            <span class="expense-amount">
               <small>R$</small>1.420,57
+            </span>
 
-              <img src="./img/remove.svg" alt="Icone remove" class="remove-icon">
-          </li>
-
-          <li class="expense">
-            <img src="./img/accommodation.svg" alt="Icone de tipo da despesa">
-
-            <div class="expense-info">
-              <strong>Hotel</strong>
-              <span>hospedagem</span>
-            </div>
-
-            <span class="expense-amount"></span>
-              <small>R$</small>1.200,00
-
-              <img src="./img/remove.svg" alt="Icone remove" class="remove-icon">
-          </li>
+            <img src="./img/remove.svg" alt="Icone remove" class="remove-icon">
+          </li> -->
         </ul>
       </aside>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

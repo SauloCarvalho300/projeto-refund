@@ -188,6 +188,7 @@ aside ul {
   list-style: none;
   display: flex;
   flex-direction: column;
+  overflow: auto;
   gap: 1rem;
 
   max-height: 310px;
@@ -277,7 +278,6 @@ aside ul {
   main section aside ul {
     width: 100%;
     height: auto;
-    overflow: auto;
   }
 
   .logo {
